@@ -1,18 +1,20 @@
-import React from 'react'
-import './AppDownload.css'
+import React from "react";
+import "./AppDownload.css";
 
-import { assets } from '../../assets/assets'
+import { assets } from "../../assets/assets";
 
 function AppDownload() {
   return (
-    <div id='app-download' className='app-download'>
-        <p>For Better Experience Download <br /> Foodzy App</p>
-        <div className='app-download-platforms'>
-            <img src={assets.play_store} alt="" />
-            <img src={assets.app_store} alt="" />
-        </div>
+    <div id="app-download" className="app-download">
+      <p>
+        For Better Experience Download <br /> Foodzy App
+      </p>
+      <div className="app-download-platforms">
+        <img src={assets.play_store} alt="" />
+        <img src={assets.app_store} alt="" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default AppDownload
+export default AppDownload;

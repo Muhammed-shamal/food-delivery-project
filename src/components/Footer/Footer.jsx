@@ -8,7 +8,7 @@ function Footer() {
     <div id="footer" className="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img className='logo' src={assets.brand_logo} alt="logo" />
+          <img className="logo" src={assets.brand_logo} alt="logo" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem voluptas, voluptatum nam, repudiandae doloremque
