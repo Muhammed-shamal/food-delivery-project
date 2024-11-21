@@ -24,6 +24,11 @@ function LoginPopup({ setShowLogin }) {
           )}
           <input type="email" placeholder="Your email" required />
           <input type="password" placeholder="Password" required />
+          {currentState === "Login" ? (
+            <></>
+          ) : (
+            <input type="password" placeholder="Confirm password" required />
+          )}
         </div>
         <button>
           {currentState === "Sign Up" ? "Create account" : "Login"}
@@ -33,11 +38,11 @@ function LoginPopup({ setShowLogin }) {
           <p>By continuing, i agree to the terms of use & privacy policy.</p>
         </div>
         {currentState === "Login" ? (
-          <p onClick={()=>setCurrentState("Sign Up")}>
+          <p onClick={() => setCurrentState("Sign Up")}>
             Create a new account? <span>Click here</span>
           </p>
         ) : (
-          <p onClick={()=>setCurrentState("Login")}>
+          <p onClick={() => setCurrentState("Login")}>
             Already have an account? <span>Login here</span>
           </p>
         )}
