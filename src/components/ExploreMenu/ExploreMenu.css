@@ -36,6 +36,10 @@
   transition: 0.2s;
 }
 
+.explore-menu-list img {
+  width: 90px;
+}
+
 .explore-menu-list-item p {
   margin-top: 10px;
   color: #747474;
