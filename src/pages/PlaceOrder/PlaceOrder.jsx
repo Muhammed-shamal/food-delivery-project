@@ -1,10 +1,10 @@
-import React,{useContext} from 'react'
-import './PlaceOrder.css'
+import React, { useContext } from "react";
+import "./PlaceOrder.css";
 
-import { StoreContext } from '../../context/StoreContext';
+import { StoreContext } from "../../context/StoreContext";
 
 function PlaceOrder() {
-  const { getTotalCartAmount } = useContext(StoreContext)
+  const { getTotalCartAmount } = useContext(StoreContext);
   return (
     <div className="place-order">
       <div className="place-order-left">
@@ -45,13 +45,11 @@ function PlaceOrder() {
               <b>${getTotalCartAmount() ? getTotalCartAmount() + 2 : 0}</b>
             </div>
           </div>
-          <button>
-            PROCEED TO PAYMENT
-          </button>
+          <button>PROCEED TO PAYMENT</button>
         </div>
       </div>
     </div>
   );
 }
 
-export default PlaceOrder
+export default PlaceOrder;

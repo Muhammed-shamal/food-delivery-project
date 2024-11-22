@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
-import './LoginPopup.css'
+import React, { useState } from "react";
+import "./LoginPopup.css";
 
-import { assets } from '../../assets/assets';
+import { assets } from "../../assets/assets";
 
 function LoginPopup({ setShowLogin }) {
   const [currentState, setCurrentState] = useState("Login");
@@ -51,4 +51,4 @@ function LoginPopup({ setShowLogin }) {
   );
 }
 
-export default LoginPopup
+export default LoginPopup;

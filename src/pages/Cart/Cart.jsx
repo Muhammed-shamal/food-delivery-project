@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Cart.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 import { StoreContext } from "../../context/StoreContext";
 
@@ -63,7 +63,9 @@ function Cart() {
               <b>${getTotalCartAmount() ? getTotalCartAmount() + 2 : 0}</b>
             </div>
           </div>
-          <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
+          <button onClick={() => navigate("/order")}>
+            PROCEED TO CHECKOUT
+          </button>
         </div>
 
         <div className="cart-promocode">
